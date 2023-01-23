@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penguin Fashion | Tailwind Website Template</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              bisque: "#FFFBF0",
+              yellow: "#FABE4C",
+              btncolor1: "#A4BC46",
+              btncolor2: "#85A019",
+              dark: "#363958",
+            },
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              roboto: ["Roboto", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="header bg-bisque">
+      <div class="container mx-auto max-w-7xl px-5">
+        <!-- Navbar -->
+        <nav class="border-gray-200 px-2 sm:px-4 py-10 rounded">
+          <div
+            class="container flex flex-wrap items-center justify-between mx-auto"
+          >
+            <a href="./" class="flex items-center">
+              <img src="./images/logo.png" class="h-6 mr-3 sm:h-9" alt="" />
+            </a>
+            <button
+              data-collapse-toggle="navbar-default"
+              type="button"
+              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden"
+              aria-controls="navbar-default"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+              <ul
+                class="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 font-roboto"
+              >
+                <li><a href="./">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Hero Section -->
+        <div class="md:flex items-center pt-12 pb-32">
+          <div class="lg:mr-60 mb-10 md:mb-0">
+            <h1 class="font-bebas text-7xl">
+              <span class="text-yellow">Be the Penguins</span><br />
+              of Winter
+            </h1>
+            <p class="font-roboto text-dark leading-7">
+              Lorem Ipsum is simply dummy text of the printing and <br />
+              typesetting industry.
+            </p>
+            <button
+              type="button"
+              class="px-8 py-4 bg-gradient-to-b from-btncolor1 to-btncolor2 text-white rounded-lg flex mt-5 font-medium font-roboto uppercase items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fff"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-7 h-7 pr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+
+              Buy Now
+            </button>
+          </div>
+          <div>
+            <img src="./images/model.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- women's Section -->
+      <section class="mt-12 mb-20 px-5">
+        <div class="container max-w-7xl mx-auto">
+          <h1 class="font-bebas text-5xl leading-10 text-dark">women jacket</h1>
+          <!-- Product Card -->
+          <div
+            class="mt-10 grid lg:grid-cols-3 gap-8 md:grid-cols-2 sm:grid-cols-1 md:px-10 lg:px-0"
+          >
+            <div
+              class="card bg-white shadow-lg p-5 rounded-3xl hover:-translate-y-5 transition-transform duration-500"
+            >
+              <div
+                class="thumbnail p-8 bg-slate-200 rounded-3xl justify-center flex"
+              >
+                <img class="h-80" src="./images/jacket-1.png" alt="" />
+              </div>
+              <h1 class="font-robot font-bold text-dark mt-4 text-2xl">
+                Yellow Coat Jacket
+              </h1>
+              <p class="font-roboto text-dark leading-6 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                eius?
+              </p>
+              <!-- Price and Cart button -->
+              <div class="flex items-center justify-between mt-5">
+                <p class="font-roboto text-4xl font-black text-yellow">$235</p>
+                <button
+                  type="button"
+                  class="px-8 py-4 bg-gradient-to-b from-btncolor1 to-btncolor2 text-white rounded-lg flex uppercase font-medium font-roboto items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#fff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-7 h-7 pr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-lg p-5 rounded-3xl hover:-translate-y-5 transition-transform duration-500"
+            >
+              <div
+                class="thumbnail p-8 bg-slate-200 rounded-3xl justify-center flex"
+              >
+                <img class="h-80" src="./images/jacket-2.png" alt="" />
+              </div>
+              <h1 class="font-robot font-bold text-dark mt-4 text-2xl">
+                Yellow Coat Jacket
+              </h1>
+              <p class="font-roboto text-dark leading-6 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                eius?
+              </p>
+              <!-- Price and Cart button -->
+              <div class="flex items-center justify-between mt-5">
+                <p class="font-roboto text-4xl font-black text-yellow">$235</p>
+                <button
+                  type="button"
+                  class="px-8 py-4 bg-gradient-to-b from-btncolor1 to-btncolor2 text-white rounded-lg flex uppercase font-medium font-roboto items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#fff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-7 h-7 pr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-lg p-5 rounded-3xl hover:-translate-y-5 transition-transform duration-500"
+            >
+              <div
+                class="thumbnail p-8 bg-slate-200 rounded-3xl justify-center flex"
+              >
+                <img class="h-80" src="./images/jacket-3.png" alt="" />
+              </div>
+              <h1 class="font-robot font-bold text-dark mt-4 text-2xl">
+                Yellow Coat Jacket
+              </h1>
+              <p class="font-roboto text-dark leading-6 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                eius?
+              </p>
+              <!-- Price and Cart button -->
+              <div class="flex items-center justify-between mt-5">
+                <p class="font-roboto text-4xl font-black text-yellow">$235</p>
+                <button
+                  type="button"
+                  class="px-8 py-4 bg-gradient-to-b from-btncolor1 to-btncolor2 text-white rounded-lg flex uppercase font-medium font-roboto items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#fff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-7 h-7 pr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Women Section End -->
+      <!-- Man Section Start -->
+      <section class="mt-12 mb-20 px-5">
+        <div class="container max-w-7xl mx-auto px-5">
+          <h1 class="font-bebas text-5xl leading-10 text-dark">men jacket</h1>
+          <!-- Product Card -->
+          <div
+            class="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:px-10 lg:px-0"
+          >
+            <div
+              class="card shadow-lg bg-white rounded-3xl p-5 hover:-translate-y-5 transition-transform duration-500"
+            >
+              <div
+                class="thumbnail bg-slate-200 p-8 rounded-3xl justify-center flex"
+              >
+                <img src="./images/jacket-4.png" alt="" />
+              </div>
+              <h1 class="font-roboto font-bold text-dark text-2xl mt-4">
+                Snowboard Jacket Mens
+              </h1>
+              <p class="font-roboto text-dark mt-3 leading-6">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Delectus, molestias.
+              </p>
+              <div class="price flex items-center justify-between mt-5">
+                <p class="text-yellow font-roboto font-black text-4xl">$455</p>
+                <button
+                  type="button"
+                  class="px-8 py-4 bg-gradient-to-b from-btncolor1 to-btncolor2 text-white rounded-lg flex uppercase font-medium font-roboto items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#fff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-7 h-7 pr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="card shadow-lg bg-white rounded-3xl p-5 hover:-translate-y-5 transition-transform duration-500"
+            >
+              <div
+                class="thumbnail bg-slate-200 p-8 rounded-3xl justify-center flex"
+              >
+                <img src="./images/jacket-5.png" alt="" />
+              </div>
+              <h1 class="font-roboto font-bold text-dark text-2xl mt-4">
+                Snowboard Jacket Mens
+              </h1>
+              <p class="font-roboto text-dark mt-3 leading-6">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Delectus, molestias.
+              </p>
+              <div class="price flex items-center justify-between mt-5">
+                <p class="text-yellow font-roboto font-black text-4xl">$455</p>
+                <button
+                  type="button"
+                  class="px-8 py-4 bg-gradient-to-b from-btncolor1 to-btncolor2 text-white rounded-lg flex uppercase font-medium font-roboto items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#fff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-7 h-7 pr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="card shadow-lg bg-white rounded-3xl p-5 hover:-translate-y-5 transition-transform duration-500"
+            >
+              <div
+                class="thumbnail bg-slate-200 p-8 rounded-3xl justify-center flex"
+              >
+                <img src="./images/jacket-6.png" alt="" />
+              </div>
+              <h1 class="font-roboto font-bold text-dark text-2xl mt-4">
+                Snowboard Jacket Mens
+              </h1>
+              <p class="font-roboto text-dark mt-3 leading-6">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Delectus, molestias.
+              </p>
+              <div class="price flex items-center justify-between mt-5">
+                <p class="text-yellow font-roboto font-black text-4xl">$455</p>
+                <button
+                  type="button"
+                  class="px-8 py-4 bg-gradient-to-b from-btncolor1 to-btncolor2 text-white rounded-lg flex uppercase font-medium font-roboto items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#fff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-7 h-7 pr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Man Section End -->
+      <!-- Service Process Start -->
+      <section class="mt-12 mb-20 px-5">
+        <div class="container max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div
+              class="md:flex md:space-x-8 py-5 px-6 items-center shadow-md rounded-lg order-2 md:order-1"
+            >
+              <img class="w-20 h-20" src="./images/icons/image 12.png" alt="" />
+              <div>
+                <p class="font-roboto font-bold text-dark text-2xl">
+                  Find The Perfect Fit
+                </p>
+                <p class="font-roboto text-dark">
+                  Everybody is different, which is why we offer styles for every
+                  body.
+                </p>
+              </div>
+            </div>
+
+            <div class="row-span-3 p-10 order-1 md:order-2">
+              <img src="./images/shopping.png" alt="" />
+            </div>
+            <div
+              class="md:flex md:space-x-8 py-5 px-6 items-center shadow-md rounded-lg order-3"
+            >
+              <img class="w-20 h-20" src="./images/icons/image 12.png" alt="" />
+              <div>
+                <p class="font-roboto font-bold text-dark text-2xl">
+                  Find The Perfect Fit
+                </p>
+                <p class="font-roboto text-dark">
+                  Everybody is different, which is why we offer styles for every
+                  body.
+                </p>
+              </div>
+            </div>
+            <div
+              class="md:flex md:space-x-8 py-5 px-6 items-center shadow-md rounded-lg order-4"
+            >
+              <img class="w-20 h-20" src="./images/icons/image 12.png" alt="" />
+              <div>
+                <p class="font-roboto font-bold text-dark text-2xl">
+                  Contact Our Seller
+                </p>
+                <p class="font-roboto text-dark">
+                  They are here to help you. That's quite literally what we pay
+                  them for.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service Process END -->
+    </main>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House Website Template | Tailwind CSS</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome ICONS -->
+    <script
+      src="https://kit.fontawesome.com/c2db77429d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1C1C1C",
+              gray: "#777777",
+              orange: "#FF0000",
+              orangeDark: "#FF8938",
+              gray1: "#F4F4F4",
+              gray2: "rgba(244, 244, 244, 0) 100%)",
+              gray3: "#D9D9D9",
+              halfGreen: "rgba(87, 118, 57, 0.1)",
+              halfOrange: "rgba(230, 166, 35, 0.1)",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            boxShadow: {
+              normal: "0px 7px 50px rgba(0, 0, 0, 0.06)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="max-w-6xl mx-auto py-20">
+      <div class="container md:grid md:grid-cols-2 md:space-x-5">
+        <div>
+          <h1
+            class="text-7xl font-black text-dark leading-tight capitalize font-manrope"
+          >
+            It's good <br />
+            tea time at the <br />
+            tea house
+          </h1>
+          <p class="text-xl font-manrope text-gray font-normal leading-8 py-7">
+            Tea and botanical solutions supplier give optimum <br />
+            satisfaction to your taste buds
+          </p>
+          <button
+            class="py-5 px-7 rounded-lg font-bold text-xl text-white bg-gradient-to-r to-orange from-orangeDark hover:bg-gradient-to-l flex items-center gap-4"
+          >
+            Explore More <img src="./images/arrow.png" alt="" />
+          </button>
+        </div>
+        <div>
+          <img src="./images/banner.png" alt="" />
+          <div
+            class="flex md:space-x-3 shadow-normal rounded-xl w-64 h-24 px-7 py-6 items-center -translate-y-28 translate-x-24 bg-white"
+          >
+            <img src="./images/star.svg" alt="" />
+            <div class="space-y-2">
+              <p class="font-manrope font-extrabold text-3xl text-dark">5.00</p>
+              <p class="font-manrope font-semibold text-gray">
+                Trust Pilot Rating
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Featured Product Section -->
+      <section class="max-w-6xl mx-auto py-20">
+        <div class="container">
+          <h1
+            class="text-5xl text-dark font-extrabold font-manrope text-center mb-5"
+          >
+            Our Featured Products
+          </h1>
+          <p class="text-center font-manrope text-gray mb-12">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, <br />
+            by injected humour, or randomised words which don't look even
+            slightly believable.
+          </p>
+          <div
+            class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:space-x-8 space-y-8 md:space-y-0 px-5"
+          >
+            <div
+              class="p-7 bg-gradient-to-b from-gray1 to-gray2 rounded-xl text-center"
+            >
+              <div class="flex justify-center mb-8">
+                <img src="./images/tea-2.png" alt="" />
+              </div>
+              <h1 class="text-2xl text-dark font-extrabold font-manrope">
+                Black Tea
+              </h1>
+              <p class="text-gray font-manrope mt-2">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+            <div
+              class="p-7 bg-gradient-to-b from-gray1 to-gray2 rounded-xl text-center"
+            >
+              <div class="flex justify-center mb-8">
+                <img src="./images/tea-2.png" alt="" />
+              </div>
+              <h1 class="text-2xl text-dark font-extrabold font-manrope">
+                Black Tea
+              </h1>
+              <p class="text-gray font-manrope mt-2">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+            <div
+              class="p-7 bg-gradient-to-b from-gray1 to-gray2 rounded-xl text-center"
+            >
+              <div class="flex justify-center mb-8">
+                <img src="./images/tea-3.png" alt="" />
+              </div>
+              <h1 class="text-2xl text-dark font-extrabold font-manrope">
+                Lemon Tea
+              </h1>
+              <p class="text-gray font-manrope mt-2">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+            <div
+              class="p-7 bg-gradient-to-b from-gray1 to-gray2 rounded-xl text-center"
+            >
+              <div class="flex justify-center mb-8">
+                <img src="./images/tea-4.png" alt="" />
+              </div>
+              <h1 class="text-2xl text-dark font-extrabold font-manrope">
+                Green Tea
+              </h1>
+              <p class="text-gray font-manrope mt-2">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Feature Section END -->
+      <!-- Gallery Section -->
+      <section class="max-w-6xl mx-auto py-20">
+        <div class="container px-5">
+          <div class="grid md:grid-cols-2 gap-24">
+            <!-- Gallery Image -->
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
+              <div
+                class="bg-gradient-to-r from-orange to-orangeDark p-10 opacity-10 rounded-lg"
+              ></div>
+              <div
+                class="row-span-2 bg-halfOrange p-5 flex items-center justify-center rounded-lg"
+              >
+                <img src="./images/fresh-1.png" alt="" />
+              </div>
+              <div
+                class="row-span-2 bg-halfGreen p-5 flex items-center justify-center rounded-lg"
+              >
+                <img src="./images/fresh-2.png" alt="" />
+              </div>
+              <div
+                class="bg-gradient-to-r from-gray3 to-gray2 p-10 rounded-lg"
+              ></div>
+            </div>
+            <!-- Gallery Text -->
+            <div>
+              <h1 class="text-5xl text-dark font-manrope font-extrabold">
+                Great Tea Freshly Presented
+              </h1>
+              <p class="text-gray font-manrope font-medium leading-7 py-7">
+                The meaning of gong cha is chanese is to provide the best tea to
+                emperor from all possessions . It represents the highest quality
+                and self expectation. Establishing in 2006, Gong cha had been
+                deeply appreciated by its custoers because of good words of
+                mouth and unique customized service orginated from Taiwan.
+              </p>
+              <h1 class="text-xl text-dark font-manrope font-extrabold">
+                Unique Taste
+              </h1>
+              <p class="text-gray font-manrope font-medium leading-7 pt-2 pb-7">
+                A Unique and different style from other teapots gives a
+                luxurious and minimalist impression
+              </p>
+              <h1 class="text-xl text-dark font-manrope font-extrabold">
+                Premium Quality
+              </h1>
+              <p class="text-gray font-manrope font-medium leading-7 pt-2">
+                Premium Quality that makes tea more elegant and more durable
+                when you use it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
